@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Registration</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e1e4e8;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"] {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+            border-color: #007bff;
+        }
+
+        button[type="submit"] {
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            align-self: center;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            input[type="text"], input[type="email"], input[type="number"] {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            button[type="submit"] {
+                padding: 10px 18px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            input[type="text"], input[type="email"], input[type="number"] {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            button[type="submit"] {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Team Registration</h2>
+        <form method="POST">
+            <!-- Team Lead -->
+            <div>
+                <label for="team_name">Team Name:</label>
+                <input type="text" id="team_name" name="team_name" required>
+            </div>
+
+            <div>
+                <label for="team_lead_name">Team Lead Name:</label>
+                <input type="text" id="team_lead_name" name="team_lead_name" required>
+            </div>
+
+            <div>
+                <label for="team_lead_email">Team Lead Email:</label>
+                <input type="email" id="team_lead_email" name="team_lead_email" required>
+            </div>
+
+            <div>
+                <label for="team_lead_phone">Team Lead Phone Number:</label>
+                <input type="text" id="team_lead_phone" name="team_lead_phone" required>
+            </div>
+
+            <div>
+                <label for="team_lead_reg_no">Team Lead Registration Number:</label>
+                <input type="text" id="team_lead_reg_no" name="team_lead_reg_no" required>
+            </div>
+
+            <!-- Member 1 -->
+            <div>
+                <label for="member_1_name">Member 1 Name:</label>
+                <input type="text" id="member_1_name" name="member_1_name" required>
+            </div>
+
+            <div>
+                <label for="member_1_email">Member 1 Email:</label>
+                <input type="email" id="member_1_email" name="member_1_email" required>
+            </div>
+
+            <div>
+                <label for="member_1_reg_no">Member 1 Registration Number:</label>
+                <input type="text" id="member_1_reg_no" name="member_1_reg_no" required>
+            </div>
+
+            <!-- Member 2 -->
+            <div>
+                <label for="member_2_name">Member 2 Name:</label>
+                <input type="text" id="member_2_name" name="member_2_name">
+            </div>
+
+            <div>
+                <label for="member_2_email">Member 2 Email:</label>
+                <input type="email" id="member_2_email" name="member_2_email">
+            </div>
+
+            <div>
+                <label for="member_2_reg_no">Member 2 Registration Number:</label>
+                <input type="text" id="member_2_reg_no" name="member_2_reg_no">
+            </div>
+
+            <!-- Member 3 -->
+            <div>
+                <label for="member_3_name">Member 3 Name:</label>
+                <input type="text" id="member_3_name" name="member_3_name">
+            </div>
+
+            <div>
+                <label for="member_3_email">Member 3 Email:</label>
+                <input type="email" id="member_3_email" name="member_3_email">
+            </div>
+
+            <div>
+                <label for="member_3_reg_no">Member 3 Registration Number:</label>
+                <input type="text" id="member_3_reg_no" name="member_3_reg_no">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
